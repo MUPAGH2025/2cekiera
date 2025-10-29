@@ -8,3 +8,7 @@ jobs:
       - uses: actions/checkout
       - run: sudo apt-get install texlive-xetex inkscape pandoc
       - run: pip install nbconvert
+      - run: python -m nbcovert --to pdf --execute test.ipynb
+      - uses: actions/upload-artifact
+        with: 
+          path: test.pdf
