@@ -6,10 +6,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: pip install scipy pint matplotlib open_atmos_jupyter_utils
-      - run: sudo apt-get install texlive-xetex inkscape pandoc
+      # - run: sudo apt-get install texlive-xetex inkscape pandoc
       - run: pip install nbconvert ipykernel
       - run: python -m ipykernel install --user
-      - run: python -m nbconvert --to pdf --execute mpdata_2d_numpy_only.ipynb
+      # - run: python -m nbconvert --to pdf --execute mpdata_2d_numpy_only.ipynb
+      - run: python -m nbconvert --to script --execute mpdata_2d_numpy_only.ipynb
       - uses: actions/upload-artifact@v4
         with: 
           path: anim.gif
