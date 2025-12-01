@@ -13,4 +13,7 @@ jobs:
       # - run: python -m nbconvert --to script --execute mpdata_2d_numpy_only.ipynb # dla gifa i innych rzeczy (idzie o wiele szybciej)
       - uses: actions/upload-artifact@v4
         with: 
-          path: project_shallow_water/reflection.gif
+          name: reports
+          path: |
+            project_shallow_water/mc_projekt.pdf
+            project_shallow_water/reflection.gif
