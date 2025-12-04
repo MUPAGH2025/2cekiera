@@ -1,0 +1,3 @@
+opisac jakie parametry fali na rysunku
+dac zaleznosc R dla mniejszej dokladnosci
+rozbic wykresy na osobne figury zeby sie zmiescilo wiecejąćććććć
