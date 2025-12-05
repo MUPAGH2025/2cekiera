@@ -15,7 +15,7 @@ jobs:
           sudo apt-get install -y \
             texlive-latex-base texlive-latex-recommended texlive-latex-extra \
             texlive-fonts-recommended texlive-lang-polish texlive-xetex
-      - run: pdflatex project_shallow_water/raport.tex
+      - run: pdflatex raport.tex
       # - run: python -m nbconvert --to script --execute mpdata_2d_numpy_only.ipynb # dla gifa i innych rzeczy (idzie o wiele szybciej)
       - uses: actions/upload-artifact@v4
         with: 
